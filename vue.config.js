@@ -1,7 +1,7 @@
 const path = require('path')
 
 // 拼接路径
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
@@ -16,9 +16,7 @@ module.exports = {
   devServer: {
     publicPath: baseUrl // 和 baseUrl 保持一致
   },
-  // 默认设置: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config/base.js
   chainWebpack: config => {
-    // 解决 cli3 热更新失效 https://github.com/vuejs/vue-cli/issues/1559
     config.resolve
       .symlinks(true)
     // markdown

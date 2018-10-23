@@ -19,22 +19,10 @@ const frameIn = [
         component: () => import('@/pages/index')
       },
       {
-        path: '/page1',
-        name: 'page1',
-        component: () => import('@/pages/page1'),
-        meta: { meta, title: '页面 1' }
-      },
-      {
-        path: '/page2',
-        name: 'page2',
-        component: () => import('@/pages/page2'),
-        meta: { meta, title: '页面 2' }
-      },
-      {
-        path: '/page3',
-        name: 'page3',
-        component: () => import('@/pages/page3'),
-        meta: { meta, title: '页面 3' }
+        path: '/bind-email',
+        name: 'bind-email',
+        component: () => import('@/pages/bind-email'),
+        meta: { meta, title: '绑定' }
       }
     ]
   }
